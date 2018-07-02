@@ -1,8 +1,16 @@
-modern: *.cpp *.hpp
-	g++ *.cpp -std=c++14 -o modern -Wall -Wextra -Werror -Wpedantic -g
+CCXX= g++
+STD= -std=c++14
+CXXFLAGS= -c -Wall -Wextra -Werror -Wpedantic
+SRC= *.cpp
+OBJ= $(SRC:.cpp=.o)
 
-	
+all=modern
+
+%.o : %.cpp %.hpp
+	$(CCXX) $(STD) $(CXXFLAGS) $< -o $@
+
+modern: $(OBJ)
+	$(CCXX) $(OBJ) -o $@
+
 clean:
-	rm modern
-newone: *.cpp *.hpp
-	g++ *.cpp -std=c++14 -o $@ -Wall -Wextra -Werror -Wpedantic -O3
+	rm  *.o modern
