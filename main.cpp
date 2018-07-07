@@ -54,6 +54,7 @@ void printAreas(const Collection& collection)
     for(vector<Shape*>::const_iterator it = collection.begin(); it != collection.end(); ++it)
     {
         if(*it != NULL)
+        {
             cout << (*it)->getArea() << std::endl;
         }
     }
