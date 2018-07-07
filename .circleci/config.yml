@@ -5,4 +5,4 @@ jobs:
         - image: gcc:6
     steps:
       - checkout
-      - make
+      - run: make modern
