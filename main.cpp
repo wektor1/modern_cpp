@@ -9,7 +9,7 @@
 
 using namespace std;
 
-//typedef vector<Shape*> Collection;
+typedef vector<Shape*> Collection;
 
 bool sortByArea(Shape* first, Shape* second)
 {
