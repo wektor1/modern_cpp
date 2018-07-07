@@ -4,7 +4,7 @@
 #include <string>
 #include "Shape.hpp"
 #include "Rectangle.hpp"
-#include "Square.hpp"
+//#include "Square.hpp"
 #include "Circle.hpp"
 
 using namespace std;

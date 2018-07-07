@@ -1,0 +1,73 @@
+[33mcommit 08cef5e97dec5cae86e8eb4a1cca2c50982f25d9[m
+Author: wektor1 <wektor1@gmail.com>
+Date:   Tue Jul 3 00:57:58 2018 +0200
+
+    New MakeFile
+
+[33mcommit 0926c0dcf1f0d0df83b634e0f3da83f6298cdb34[m
+Author: wektor1 <wektor1@gmail.com>
+Date:   Sun Jul 1 13:31:35 2018 +0200
+
+    VimCrypt~01!×øµ>pjð´0-Ó0=È$1ÍX4®*׉ù#ï\)ˇe־7lÿֆ,ձÔ!»¼åz¨mþ򊽾K;»ÕðBôyGÍ&LÒðì#,$ÑÆ~ÁÿØ:¢¢̆ðÔMꬪ* ¾ÝCX_¢}ҁ~ÈlGPôêÐl§)KgtÎ]¸ßÁRNDÏCVÿXA¦dè}
+    ͝w7¨Ìô7uÇp׊^ãÈ%gä·vêb]¼r|{æûe2^ÌÝ}{ïá]T¾ê"*"Ü
+    ùyݩóÆbÀª6¶ÝJÌïèAÖæßZ;F$ÜÊؽPQ0rBãÔÆ2rtöÙùK`¸`ËIèÂ̩EoòDS£ÿ}ãBËôJ>
+
+[33mcommit 082c047f26ff59e1d06d33c8d2474bce43c3f9f3[m
+Author: Lukasz Ziobron <lukasz.ziobron@nokia.com>
+Date:   Wed May 23 23:26:56 2018 +0200
+
+    README.txt fixed
+
+[33mcommit c4191820c227da417f661e072c9f8ae93fec526f[m
+Author: Lukasz Ziobron <lukasz.ziobron@nokia.com>
+Date:   Sat Feb 17 22:47:57 2018 +0100
+
+    Proper, full README.txt in english. CMakeLists.txt with C++14 support. install_packages.sh removed. Presentation removed
+
+[33mcommit 0cb9c0843869eb7ecac5ced43c7e6a2e76267880[m
+Author: Lukasz Ziobron <lukasz.ziobron@nokia.com>
+Date:   Thu Mar 23 08:48:28 2017 +0100
+
+    Version without multithreading brought back
+
+[33mcommit 89af449bb6076cd4b1b4c3426dd1f6c2dc9e7ff4[m
+Author: Lukasz Ziobron <lukasz.ziobron@nokia.com>
+Date:   Tue Mar 29 13:28:18 2016 +0200
+
+    Version without multithreading brought back. Presentation added.
+
+[33mcommit 03d7e3230a1c6557ad7dada01ec892584b331ad8[m
+Author: Lukasz Ziobron <lukasz.ziobron@nokia.com>
+Date:   Thu Sep 22 08:21:55 2016 +0200
+
+    Default constructor removed
+
+[33mcommit 2279a2cd734cbfa729e690d91377f4366a4d3497[m
+Author: Kamil Szatkowski <kamil.szatkowski@nsn.com>
+Date:   Wed Sep 21 09:17:46 2016 +0200
+
+    Added ThreadQueue
+
+[33mcommit 3a66a6f5ea27c45a74d69c96d41aca83ba82eb5a[m
+Author: Kamil Szatkowski <kamil.szatkowski@nsn.com>
+Date:   Tue Sep 20 15:50:40 2016 +0200
+
+    Added thread_id: to print to make it even slower
+
+[33mcommit 28dd41df59c26284737457dd77d51e8262a734f4[m
+Author: Lukasz Ziobron <lukasz.ziobron@nokia.com>
+Date:   Sat Sep 10 06:40:32 2016 +0200
+
+    Multithreading printing added
+
+[33mcommit a4a1577278fd9eb3a1f3d1760d53f249f48078c8[m
+Author: Lukasz Ziobron <lukasz.ziobron@nokia.com>
+Date:   Tue Mar 29 13:28:18 2016 +0200
+
+    Instructions added
+
+[33mcommit feb492df36a29887b64d3c11833efa633c3b0aea[m
+Author: ziobron <lukasz.ziobron@nokia.com>
+Date:   Sun Apr 19 21:21:28 2015 +0200
+
+    Initial commit

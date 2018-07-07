@@ -21,7 +21,7 @@ double Square::getPerimeter()
 
 void Square::print()
 {
-    std::cout << "Square:      x: " << getX() << std::endl
+    std::cout << " Square:     x: " << getX() << std::endl
               << "          area: " << getArea() << std::endl
               << "     perimeter: " << getPerimeter() << std::endl;
 }
