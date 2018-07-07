@@ -1,7 +1,7 @@
 CCXX= g++
 STD= -std=c++14
 CXXFLAGS= -c -Wall -Wextra -Werror -Wpedantic
-SRC= *.cpp
+SRC=$(wildcard *.cpp)
 OBJ= $(SRC:.cpp=.o)
 
 all:modern
@@ -13,4 +13,4 @@ modern: $(OBJ)
 	$(CCXX) $(OBJ) -o $@
 
 clean:
-	rm *.o modern
+	rm modern *.o
