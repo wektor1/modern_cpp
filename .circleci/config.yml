@@ -2,7 +2,7 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: gcc
+        - image: gcc:6
     steps:
       - checkout
       - run: make modern
