@@ -4,12 +4,12 @@
 #include <string>
 #include "Shape.hpp"
 #include "Rectangle.hpp"
-//#include "Square.hpp"
+#include "Square.hpp"
 #include "Circle.hpp"
 
 using namespace std;
 
-typedef vector<Shape*> Collection;
+//typedef vector<Shape*> Collection;
 
 bool sortByArea(Shape* first, Shape* second)
 {

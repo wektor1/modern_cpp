@@ -5,5 +5,4 @@ jobs:
         - image: gcc:6
     steps:
       - checkout
-      - run: cd build
       - run: make
