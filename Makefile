@@ -13,4 +13,4 @@ modern: $(OBJ)
 	$(CCXX) $(OBJ) -o $@
 
 clean:
-        rm *.o modern
+	rm *.o modern
