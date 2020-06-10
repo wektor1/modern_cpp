@@ -2,6 +2,8 @@
 #include <math.h>
 #include <iostream>
 
+static_assert(M_PI != 3.14);
+
 Circle::Circle(double r)
     : r_(r)
 {}

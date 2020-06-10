@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/modern_cpp.dir/Square.cpp.o CMakeFiles/modern_cpp.dir/Rectangle.cpp.o CMakeFiles/modern_cpp.dir/main.cpp.o CMakeFiles/modern_cpp.dir/Circle.cpp.o CMakeFiles/modern_cpp.dir/Shape.cpp.o  -o modern_cpp -rdynamic 
