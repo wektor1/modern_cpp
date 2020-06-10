@@ -7,6 +7,9 @@ jobs:
     steps:
       - run:
           command: "mkdir build"
+      - run:
           command: "cd build"
+      - run:
           command: "cmake .."
+      - run:
           command: "make"
