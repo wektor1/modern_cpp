@@ -1,8 +1,14 @@
-version: 2.0
+version: 2.1
 jobs:
   build:
     docker:
         - image: gcc:6
+    resource_class: xlarge
     steps:
       - checkout
-      - run: make
+      - run:
+          command:
+              mkdir build
+              cd build
+              cmake ..
+              make
