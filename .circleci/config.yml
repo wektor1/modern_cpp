@@ -6,8 +6,7 @@ jobs:
     resource_class: xlarge
     steps:
       - run:
-          command:
-              mkdir build
-              cd build
-              cmake ..
-              make
+          command: "mkdir build"
+          command: "cd build"
+          command: "cmake .."
+          command: "make"
