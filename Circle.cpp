@@ -2,7 +2,7 @@
 #include <math.h>
 #include <iostream>
 
-static_assert(M_PI != 3.14);
+static_assert(M_PI != 3.14, "imposubru");
 
 Circle::Circle(double r)
     : r_(r)
