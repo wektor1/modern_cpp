@@ -7,36 +7,17 @@
 #include "Square.hpp"
 #include "Circle.hpp"
 #include "memory"
+#include <utility>
 
 using namespace std;
 
 using Collection = vector<shared_ptr<Shape>>;
 
-bool sortByArea(shared_ptr<Shape> first, shared_ptr<Shape> second)
-{
-    if(first == nullptr || second == nullptr)
-    {
-        return false;
-    }
-    return (first->getArea() < second->getArea());
-}
 
-bool perimeterBiggerThan20(shared_ptr<Shape> s)
+template<class DerivedType, class... Arguments>
+shared_ptr<Shape> make_shape(Arguments&&... args)
 {
-    if(s)
-    {
-        return (s->getPerimeter() > 20);
-    }
-    return false;
-}
-
-bool areaLessThan10(shared_ptr<Shape> s)
-{
-    if(s)
-    {
-        return (s->getArea() < 10);
-    }
-    return false;
+    return shared_ptr<DerivedType>(forward<Arguments>(args)...);
 }
 
 void printCollectionElements(const Collection& collection)
@@ -55,8 +36,9 @@ void printAreas(const Collection& collection)
     }
 }
 
+template<class F>
 void findFirstShapeMatchingPredicate(const Collection& collection,
-                                     bool (*predicate)(shared_ptr<Shape> s),
+                                     F predicate,
                                      std::string info)
 {
     auto iter = std::find_if(collection.begin(), collection.end(), predicate);
@@ -73,6 +55,32 @@ void findFirstShapeMatchingPredicate(const Collection& collection,
 
 int main()
 {
+    auto sortByArea = [](shared_ptr<Shape> first, shared_ptr<Shape> second)
+{
+    if(first == nullptr || second == nullptr)
+    {
+        return false;
+    }
+    return (first->getArea() < second->getArea());
+};
+
+auto perimeterBiggerThan20 = [](shared_ptr<Shape> s)
+{
+    if(s)
+    {
+        return (s->getPerimeter() > 20);
+    }
+    return false;
+};
+int x = 10;
+auto areaLessThanX = [=](shared_ptr<Shape> s )
+{
+    if(s)
+    {
+        return (s->getArea() < x);
+    }
+    return false;
+};
     Rectangle r(2.0, 5.0);
     Collection shapes{
     make_shared<Circle>(2.0),
@@ -98,7 +106,7 @@ int main()
     shapes.push_back(square);
 
     findFirstShapeMatchingPredicate(shapes, perimeterBiggerThan20, "perimeter bigger than 20");
-    findFirstShapeMatchingPredicate(shapes, areaLessThan10, "area less than 10");
+    findFirstShapeMatchingPredicate(shapes, areaLessThanX, "area less than 10");
 
     return 0;
 }
